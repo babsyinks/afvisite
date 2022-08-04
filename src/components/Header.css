@@ -1,0 +1,57 @@
+li{
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    height: 15vh;
+  }
+  .navList{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:40%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding-right:40px
+  }
+  
+  .navList > li{
+    cursor: pointer;
+  }
+
+
+  .navList > li:hover{
+    color: brown;
+  }
+
+  .navList a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .logoWrapper{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoWrapper img{
+    margin-bottom: 0px;
+    display: inline-block;
+    width: min-content;
+  }
+  .logoWrapper div{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Source Code Pro', monospace;
+    font-weight:bold;
+    letter-spacing: 5px;
+    color: brown;
+  }

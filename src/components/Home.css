@@ -1,0 +1,16 @@
+#bodyImage{
+    background-image: url('./images/body.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 85vh;
+    
+  }
+
+  @keyframes x-axis-animation {
+    from {transform: translateX(0px)}
+    to {transform: translateX(-3px)}
+  }
+
+  .x-axis {
+    animation: x-axis-animation 1s ease-in-out 0s infinite alternate;
+  }
