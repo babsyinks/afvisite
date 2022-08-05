@@ -10,6 +10,8 @@ li{
     padding-top: 15px;
     padding-bottom: 5px;
     height: 15vh;
+    background-color: #FFFFFF;
+    
   }
   .navList{
     display: flex;
@@ -23,12 +25,20 @@ li{
   }
   
   .navList > li{
+    display: inline-block;
+    color: black;
+    padding: 13px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
   }
 
 
   .navList > li:hover{
-    color: brown;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    transform: scale(1.1)
   }
 
   .navList a{

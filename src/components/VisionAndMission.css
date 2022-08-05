@@ -1,0 +1,9 @@
+.vm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vm h2{
+    font-family: 'Playfair Display', serif;
+}

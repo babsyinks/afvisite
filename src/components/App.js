@@ -1,6 +1,6 @@
 import Header from './Header';
 import Home from './Home';
-import MissionAndVision from './MissionAndVision';
+import VisionAndMission from './VisionAndMission';
 import About from './About';
 import Components from './Components';
 import Contact from './Contact';
@@ -16,8 +16,8 @@ function App() {
             <Header/>
             <Routes>
                 <Route exact path = '/' element = {<Home />}/>
-                <Route exact path = '/mission_vision' element = {<MissionAndVision />}/>
                 <Route exact path = '/about' element = {<About />}/>
+                <Route exact path = '/vision_mission' element = {<VisionAndMission />}/>
                 <Route exact path = '/components' element = {<Components />}/>
                 <Route exact path = '/contents' element = {<Contents />}/>
                 <Route exact path = '/contact' element = {<Contact />}/>

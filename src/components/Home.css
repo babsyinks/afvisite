@@ -1,4 +1,8 @@
 #bodyImage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     background-image: url('./images/body.jpg');
     background-size: cover;
     width: 100vw;
@@ -6,9 +10,36 @@
     
   }
 
+  #introduction{
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    width: 40vw;
+    padding: 2px 20px;
+  }
+  .introduction_contents{
+    opacity:1;
+    color: rgba(255, 255, 255, 1);
+
+  }
+
+  .no_cap{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1rem;
+  }
+
+  .cap{
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+ 
+
   @keyframes x-axis-animation {
     from {transform: translateX(0px)}
-    to {transform: translateX(-3px)}
+    to {transform: translateX(-5px)}
   }
 
   .x-axis {
