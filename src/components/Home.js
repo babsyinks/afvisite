@@ -1,6 +1,21 @@
 import React from 'react'
+import ComponentWrapper from './ComponentWrapper'
 import './Home.css'
 const Home = () => {
+  const missionvision = `We are highly focused proffessionals. We have a grand vision we hope you will share with us. We will like to take you 
+  on a journey with us as we build the film village of our dreams. We are on a mission to bring this dream to reality. Hang in there with us;
+  we promise to make it a fun-filled experience for everyone on this journey with us!
+  `
+
+  const component_desc = `Our components are the core building blocks that the film village depends on. Our components are numerous, we have over
+  50 components. All components are important and form key cogs that drive the film village project forward. We encourage you to take a deep dive 
+  into our component page, and check out all the components we have to offer, perhaps some may be of interest to you.
+  `
+
+  const contact_us = `Still have questions? Please do not hesitate to reach out to us. We are available always on multiple communication channels.
+  You can also visit our office at our designated address that can be found on our contact page. We look foraward to hearing from you very soon.
+  
+  `
   return (
     <div>
         <div id='bodyImage' className='x-axis'>
@@ -36,7 +51,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div>Core Components discover more...</div>
+        <ComponentWrapper src={'/images/scrabble-mission-vision.jpg'} alt={'mission and vision in scrabble form'} desc={missionvision} useButton={{text:'Learn More',linkTo:'/vision_mission'}}/>
+        <ComponentWrapper src={'/images/cog-wheels.jpg'} alt={'components of AFVI briefly'} desc={component_desc} useButton={{text:'More Components',linkTo:'/components'}} alternate={true}/>
+        <ComponentWrapper src={'/images/contact-us-call.png'} alt='call us' desc={contact_us} useButton={{text:'Contact Us',linkTo:'/contact'}}/>
+        
     </div>
   )
 }

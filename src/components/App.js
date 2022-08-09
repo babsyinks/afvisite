@@ -1,4 +1,5 @@
 import Header from './Header';
+import ScrollToTop from './ScrollToTop';
 import Home from './Home';
 import VisionAndMission from './VisionAndMission';
 import About from './About';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop>
             <Header/>
             <Routes>
                 <Route exact path = '/' element = {<Home />}/>
@@ -23,6 +25,7 @@ function App() {
                 <Route exact path = '/contact' element = {<Contact />}/>
                 <Route path='*' element = {<NotFound/>} />
             </Routes> 
+            </ScrollToTop>
         </BrowserRouter>
       <Footer/>
     </div>

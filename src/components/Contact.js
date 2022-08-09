@@ -1,8 +1,6 @@
 import React from 'react'
-//import BingMapsReact from "bingmaps-react";
 import ComponentWrapper from './ComponentWrapper'
 import Map from './Map'
-//import BingMap from './Map'
 import './Contact.css'
 
 const Contact = () => {
@@ -12,18 +10,6 @@ const Contact = () => {
   looking for a great project to invest in, why don't you invest with us? We will make it worth your 
   while!
   `
-/*   const [bingMapReady, setBingMapReady] = useState(false)
-  const pushPin = {
-    center: {
-      latitude: 9.038229,
-      longitude: 7.484308,
-    },
-    options: {
-      title: "AFVI Office",
-    },
-  }
-
-  const pushPins = [pushPin]; */
   return (
     <>
       <ComponentWrapper src={`/images/contact-us.jpg`} alt='contact us' desc={contactus}/>
@@ -44,29 +30,7 @@ const Contact = () => {
           <div><a className='whts' href='https://api.whatsapp.com/send?phone=2348051750010' target={'blank'}>Click to chat with us on WhatsApp</a></div>
         </div>
       </div>   
-{/*       <BingMapsReact
-        bingMapsKey="Ajd79zktPW0ujfpVikFLM6O_rjHCfH6qQE631B0DZb2Q71xhN0FiEWZ18yZ2gO3v"
-        height="500px"
-        onMapReady={async function () {
-          setBingMapReady(true)
-      }}
-        mapOptions={{
-          navigationBarMode: "square",
-        }}
-        width="100vw"
-        viewOptions={{
-          center: { latitude: 9.038229, longitude: 7.484308 },
-        }}
-        pushPins={bingMapReady?pushPins:null}
-    /> */}
      <Map/>
-{/*     <BingMap
-      mapOptions={{
-        center: [9.038229, 7.484308],
-        credentials:'Ajd79zktPW0ujfpVikFLM6O_rjHCfH6qQE631B0DZb2Q71xhN0FiEWZ18yZ2gO3v'
-             
-      }}
-      /> */}
     </>
   )
 }
