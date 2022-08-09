@@ -1,0 +1,53 @@
+#contactgroup{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contactoptions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+    width: 29vw;
+    height: 30vw;
+    box-shadow: 0 0 3px #ccc;
+    margin-bottom: 1.25rem;
+    padding: 0.7rem;
+    line-height: 1.75rem;
+}
+.contactoptions .envelope{
+    color: rgb(52, 84, 213);
+}
+
+.contactoptions .phone{
+    color: rgb(187, 55, 55);
+}
+
+.contactoptions .whatsapp{
+    color: green;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.contactoptions a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.03rem;
+}
+.contactdesc{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+.phn{
+    color: rgb(234, 88, 88);
+}
+
+.env{
+    color: rgb(108, 108, 241);
+}
+
+.whts{
+    color: rgb(6, 123, 6);
+}

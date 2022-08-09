@@ -23,8 +23,19 @@ li{
     text-transform: capitalize;
     padding-right:40px
   }
-  
-  .navList > li{
+  .navList a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .selected{
+    border: 1px solid black;
+    border-radius: 50px;
+    color: white !important;
+    background-color: black;
+    padding: 13px;
+  }
+  .navList  a{
     display: inline-block;
     color: black;
     padding: 13px;
@@ -33,7 +44,7 @@ li{
   }
 
 
-  .navList > li:hover{
+  .navList a:hover:not(.selected){
     border: 1px solid black;
     border-radius: 50px;
     color: white;
@@ -41,10 +52,8 @@ li{
     transform: scale(1.1)
   }
 
-  .navList a{
-    text-decoration: none;
-    color: inherit;
-  }
+
+ 
   
   .logoWrapper{
     width: 20%;
