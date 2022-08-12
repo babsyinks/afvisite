@@ -1,0 +1,28 @@
+#button_pos{
+    padding: 1rem;
+    background-color: lime;
+    outline: none;
+    border: none;
+    font-family: 'Berkshire Swash', cursive;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#button_pos:hover{
+    background-color: rgb(99, 249, 99);
+}
+
+#button_neg{
+    padding: 0.9rem;
+    background-color: red;
+    outline: none;
+    border: none;
+    font-family: 'Berkshire Swash', cursive;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#button_neg:hover{
+    background-color: rgb(254, 59, 59);
+}
+

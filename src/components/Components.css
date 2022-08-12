@@ -1,0 +1,7 @@
+.compWrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    width: 100vw;   
+}

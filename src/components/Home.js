@@ -53,7 +53,7 @@ const Home = () => {
         </div>
         <ComponentWrapper src={'/images/scrabble-mission-vision.jpg'} alt={'mission and vision in scrabble form'} desc={missionvision} useButton={{text:'Learn More',linkTo:'/vision_mission'}}/>
         <ComponentWrapper src={'/images/cog-wheels.jpg'} alt={'components of AFVI briefly'} desc={component_desc} useButton={{text:'More Components',linkTo:'/components'}} alternate={true}/>
-        <ComponentWrapper src={'/images/contact-us-call.png'} alt='call us' desc={contact_us} useButton={{text:'Contact Us',linkTo:'/contact'}}/>
+        <ComponentWrapper src={'/images/contact-us-call.jpg'} alt='call us' desc={contact_us} useButton={{text:'Contact Us',linkTo:'/contact'}}/>
         
     </div>
   )

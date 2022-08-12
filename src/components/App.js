@@ -9,7 +9,6 @@ import Contents from './Contents';
 import Footer from './Footer'
 import NotFound from './NotFound';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
-import './App.css';
 function App() {
   return (
     <div className="App">

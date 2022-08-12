@@ -21,25 +21,9 @@
     font-family: 'Open Sans', sans-serif;
     overflow-y: auto;
     display: flex;
-    
     align-items: center;
     flex-direction: column;
 }
-
-#button_section{
-    padding: 1rem;
-    background-color: lime;
-    margin-top: 2.5rem;
-    outline: none;
-    border: none;
-    font-family: 'Berkshire Swash', cursive;
-    cursor: pointer;
-}
-
-#button_section:hover{
-    background-color: rgb(99, 249, 99);
-}
-
 
 .boxes{
     height: 60vh;
