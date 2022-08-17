@@ -3,7 +3,39 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 19vh
 }
 .vm h2{
     font-family: 'Playfair Display', serif;
+
 }
+
+@media screen and (max-width:1000px) {
+    .vm{
+      margin-top: 10px;
+    }
+   }
+
+@media screen and (orientation:portrait) {
+    .vm{
+        margin-top: 19vh;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width:1000px) {
+    .vm{
+        margin-top: 29vh;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .vm{
+        margin-top: 31vh;
+    }
+  }
+
+  @media screen and (max-height:300px) {
+    .vm{
+        margin-top: 41vh;
+    }
+  }

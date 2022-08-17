@@ -48,7 +48,7 @@ const Comp = ({title,image,description}) => {
             <AnimateHeight id="example-panel"
                         duration={description === 'component'?1000:500}
                         height={height}>
-                {MyComp?<MyComp/>:<div>{description}</div>}
+                {MyComp?<MyComp/>:<>{description}</>}
 
                 
             </AnimateHeight> 
@@ -61,9 +61,3 @@ const Comp = ({title,image,description}) => {
 }
 
 export default Comp
-
-/* (height?(
-    <>
-        {MyComp?<MyComp/>:<div>{description}</div>}
-        <Button id={'button_neg'} text={'Close'} onClick={handleDescription} additionalStyle={{marginBottom:'1rem'}}/>
-    </>):<Button id={'button_pos'} text={'Read More'} onClick={handleDescription} additionalStyle={{marginBottom:'1rem'}}/>) */

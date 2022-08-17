@@ -1,0 +1,33 @@
+#contents{
+    margin-top: 19vh;
+}
+
+@media screen and (max-width:1000px) {
+    #contents{
+      margin-top: 10px;
+    }
+   }
+
+   @media screen and (orientation:portrait){
+    #contents{
+      margin-top: 19vh;
+    }
+   }
+
+   @media screen and (orientation:landscape) and (max-width:1000px) {
+    #contents{
+      margin-top: 29vh;
+    }
+   }
+
+   @media screen and (max-height:400px) {
+    #contents{
+      margin-top: 31vh;
+    }
+  }
+
+  @media screen and (max-height:300px) {
+    #contents{
+      margin-top: 41vh;
+    }
+  }

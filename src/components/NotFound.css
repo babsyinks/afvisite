@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     height:68vh;
+    margin-top: 19vh;
 }
 
 .nf_wrapper h1{
@@ -33,7 +34,17 @@
     margin-bottom: 25px;
 }
 
-@media only screen and (orientation:portrait){
+@media screen and (max-width:1000px) {
+    .nf_wrapper{
+      margin-top: 10px;
+    }
+   }
+
+   @media only screen and (orientation:portrait){
+
+    .nf_wrapper{
+        margin-top: 19vh;
+    }
 
     .nf_wrapper h1{
         font-size: 2.343vh;
@@ -46,3 +57,20 @@
         font-size: 0.976vh;
     }
 }
+@media screen and (orientation:landscape) and (max-width:1000px) {
+    .nf_wrapper{
+        margin-top: 29vh;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .nf_wrapper{
+        margin-top: 31vh;
+    }
+  }
+
+  @media screen and (max-height:300px) {
+    .nf_wrapper{
+        margin-top: 41vh;
+    }
+  }

@@ -1,7 +1,32 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import ComponentWrapper from './ComponentWrapper'
 import './Home.css'
 const Home = () => {
+const[windowHeight,setWindowHeight] = useState(0)
+const[windowWidth,setWindowWidth] = useState(0)
+const[isPortrait,setIsportrait] = useState(false)
+  useEffect(()=>{
+    setWindowHeight(window.innerHeight) 
+    setWindowWidth(window.innerWidth)
+    if(windowHeight > windowWidth){
+      setIsportrait(true)
+    }
+  },[windowHeight,windowWidth])
+
+  useEffect(()=>{
+    const handleWindowResize = ()=>{
+      setWindowHeight(window.innerHeight) 
+      setWindowWidth(window.innerWidth)
+      if(windowHeight > windowWidth){
+        setIsportrait(true)
+      }
+    }
+      window.addEventListener('resize',handleWindowResize)
+      return ()=>window.removeEventListener('resize',handleWindowResize)
+  },[windowHeight,windowWidth]
+  )
+
+
   const missionvision = `We are highly focused proffessionals. We have a grand vision we hope you will share with us. We will like to take you 
   on a journey with us as we build the film village of our dreams. We are on a mission to bring this dream to reality. Hang in there with us;
   we promise to make it a fun-filled experience for everyone on this journey with us!
@@ -17,7 +42,7 @@ const Home = () => {
   
   `
   return (
-    <div>
+    <div id='bodywrapper'>
         <div id='bodyImage' className='x-axis'>
           <div id='introduction'>
             <div className='introduction_contents no_cap'>What Are We Doing?</div>
@@ -52,7 +77,7 @@ const Home = () => {
           </div>
         </div>
         <ComponentWrapper src={'/images/scrabble-mission-vision.jpg'} alt={'mission and vision in scrabble form'} desc={missionvision} useButton={{text:'Learn More',linkTo:'/vision_mission'}}/>
-        <ComponentWrapper src={'/images/cog-wheels.jpg'} alt={'components of AFVI briefly'} desc={component_desc} useButton={{text:'More Components',linkTo:'/components'}} alternate={true}/>
+        <ComponentWrapper src={'/images/cog-wheels.jpg'} alt={'components of AFVI briefly'} desc={component_desc} useButton={{text:'More Components',linkTo:'/components'}} alternate={!isPortrait}/>
         <ComponentWrapper src={'/images/contact-us-call.jpg'} alt='call us' desc={contact_us} useButton={{text:'Contact Us',linkTo:'/contact'}}/>
         
     </div>

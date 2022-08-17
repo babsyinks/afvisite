@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #img_section{
@@ -32,3 +33,47 @@
     box-shadow: 0 0 3px #ccc;
     line-height: 1.75rem;
 }
+
+@media screen and (orientation:portrait) {
+    #compwrapper{
+        flex-direction: column;
+    }
+
+    #compwrapper{
+        height: unset;
+    }
+
+    
+#desc_section{
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.boxes{
+    height: auto;
+    width: 100vw;
+    padding: 0px;
+    padding-bottom: 0.5rem;
+}
+
+#img_section{
+    margin-right: 0px;
+    height: 60vh;
+}
+
+}
+@media screen and (orientation:portrait) and (min-width:700px){
+    #desc_section{
+        font-size: 1.7rem;
+        line-height: 50px;
+    }
+     #button_pos, #button_neg{
+        font-size: 2rem;
+     }
+}
+
+@media screen and (max-height:400px) {
+    #button_pos, #button_neg{
+        font-size: 0.7rem;
+     }
+  }

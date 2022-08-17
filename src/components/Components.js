@@ -8,7 +8,7 @@ const Components = () => {
     <div className='compWrap'>
       {componentsData.map(obj=>{
         return (
-          <Comp title={obj.title} image={obj.image} description={obj.description} />
+          <Comp key={obj.title} title={obj.title} image={obj.image} description={obj.description} />
         )
       })}
     </div>

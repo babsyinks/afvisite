@@ -13,7 +13,10 @@ const About = () => {
   
   `
   return (
-    <ComponentWrapper src={'/images/aboutus.jpg'} alt='aboutus' desc={desc}/>
+    <div id='about'>
+      <ComponentWrapper src={'/images/aboutus.jpg'} alt='aboutus' desc={desc}/>
+    </div>
+    
   )
 }
 

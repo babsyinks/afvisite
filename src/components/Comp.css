@@ -6,7 +6,6 @@
     width: 47vw;
     box-shadow: 0 0 3px #ccc;
     margin-top: 2rem;
-    
 }
 
 .indComp h2{
@@ -21,7 +20,47 @@
 }
 
 .indComp div{
-    width: 95%;
-    padding-bottom: 1rem;
+    padding: 0rem 0.5rem 1rem;
+    
     font-family: 'Open Sans', sans-serif;
 }
+
+@media screen and (max-width:1000px) {
+    .indComp h2{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .indComp{
+        width: 98vw;
+    }
+    .indComp h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (orientation:portrait) and (min-width:700px){
+    .indComp h2{
+        font-size: 2.5rem;
+    }
+    #example-panel{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .mobWrapper{
+      height: 30vh;
+    }
+
+    .indComp h2{
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-height:300px) {
+    .mobWrapper{
+        height: 40vh;
+    }
+  }

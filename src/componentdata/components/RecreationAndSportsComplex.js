@@ -6,7 +6,7 @@ const RecreationAndSportsComplex = () => {
     <div>
         <div>Recreation and Sports Complexes, and Gymnasiums – attached to the University, and also independently.</div>
         <ol>
-            {arr.map(v=><li type='a'>{v}</li>)}
+            {arr.map(v=><li key={v} type='a'>{v}</li>)}
         </ol>
     </div>
   )

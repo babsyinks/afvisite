@@ -9,9 +9,14 @@
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 5px;
-    height: 15vh;
+    height: 18vh;
     background-color: #FFFFFF;
-    
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+   
   }
   .navList{
     display: flex;
@@ -51,16 +56,13 @@
     background-color: black;
     transform: scale(1.1)
   }
-
-
- 
-  
   .logoWrapper{
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   .logoWrapper img{
     margin-bottom: 0px;
@@ -68,9 +70,105 @@
     width: min-content;
   }
   .logoWrapper div{
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Source Code Pro', monospace;
     font-weight:bold;
     letter-spacing: 5px;
     color: brown;
+  }
+
+  /* devices less than 1000px in length */
+
+  .mobWrapper{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 18vh;
+    background-color: #FFFFFF;
+    z-index: 9999;
+  }
+
+  .mobWrapper a{
+    color: white;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width:1000px) {
+    .selected{
+      color: blueviolet !important;
+    }
+
+    .nav{
+      position: unset;
+    }
+
+  }
+
+
+  .logoDiv .logoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 1rem;
+  }
+
+  .menu-items{
+    padding-right: 10px;
+  }
+
+  @media screen and (orientation:portrait) {
+    .logoWrapper img{
+      width: 60px;
+      height: 42px;
+    }
+    .logoWrapper div{
+      font-size: 14px;
+      letter-spacing: 5px;
+    }
+  }
+
+  @media screen and (orientation:landscape) and (max-width:1000px) {
+    .mobWrapper{
+      height: 27vh;
+    }
+    .logoWrapper img{
+      width: 60px;
+      height: 42px;
+    }
+    .logoWrapper div{
+      font-size: 14px;
+      letter-spacing: 5px;
+    }
+  }
+
+  @media screen and (orientation:portrait) and (min-width:700px){
+    .mobWrapper a{
+      font-size: x-large;
+    }
+
+    .bm-menu-wrap{
+      width: 50vw !important;
+    }
+
+    .logoWrapper img{
+      width: 70px;
+      height: 52px;
+    }
+    .logoWrapper div{
+      font-size: 18px;
+      letter-spacing: 5px;
+    }
+  }
+
+  @media screen and (max-height:400px) {
+    .mobWrapper{
+      height: 30vh;
+    }
+  }
+  
+  @media screen and (max-width:300px) {
+    .bm-menu-wrap{
+      width: fit-content !important;
+    }
   }

@@ -4,4 +4,40 @@
     flex-wrap: wrap;
     align-items:flex-start;
     width: 100vw;   
+    margin-top: 19vh;
+    
 }
+
+.compWrap * {
+  box-sizing: unset;
+}
+
+@media screen and (max-width:1000px) {
+    .compWrap{
+      margin-top: 10px;
+    }
+   }
+
+   @media screen and (orientation:portrait) {
+    .compWrap{
+      margin-top: 19vh;
+    }
+   }
+
+   @media screen and (orientation:landscape) and (max-width:1000px) {
+    .compWrap{
+      margin-top: 29vh;
+    }
+   }
+
+   @media screen and (max-height:400px) {
+    .compWrap{
+      margin-top: 31vh;
+    }
+  }
+
+  @media screen and (max-height:300px) {
+    .compWrap{
+      margin-top: 41vh;
+    }
+  }

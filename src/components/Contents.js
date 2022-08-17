@@ -6,7 +6,10 @@ const Contents = () => {
   const contentsArr = []
   const contents = contentsArr.length?'':'There is no video or picture yet.Check back soon.'
   return (
-    <ComponentWrapper src={'/images/content.jpg'} alt='content' desc={contents}/>
+    <div id='contents'>
+      <ComponentWrapper src={'/images/content.jpg'} alt='content' desc={contents}/>
+    </div>
+    
   )
 }
 

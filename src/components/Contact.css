@@ -1,3 +1,6 @@
+#contact{
+    margin-top: 19vh;
+}
 #contactgroup{
     display: flex;
     justify-content:space-around;
@@ -9,7 +12,7 @@
     justify-content: space-evenly;
     align-items:center;
     flex-direction: column;
-    width: 29vw;
+    width: 31vw;
     height: 30vw;
     box-shadow: 0 0 3px #ccc;
     margin-bottom: 1.25rem;
@@ -51,3 +54,198 @@
 .whts{
     color: rgb(6, 123, 6);
 }
+
+.locationWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.locateus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:  2rem 1.25rem 4rem;
+    line-height: 3rem;
+    box-shadow: 0 0 3px #ccc;
+    width: 97vw;
+}
+
+.location{
+    color: rgb(90, 6, 169);
+}
+
+.welc{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.addr{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(63, 2, 120);
+}
+
+@media screen and (max-width:1000px) {
+    #contact{
+      margin-top: 10px;
+    }
+    .contactoptions{
+        
+        overflow-y: scroll;
+        width: 32vw;
+    }
+
+   .contactoptions .envelope,.contactoptions .phone, .contactoptions .whatsapp{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    } 
+
+    .wordBreak{
+        word-break: break-all;
+    }
+   }
+
+   @media screen and (max-height:350px) {
+    .contactoptions{
+        height: 200px;
+    }
+
+    @media screen and (max-height:300px) {
+        #contactgroup{
+            margin-top: 1rem;
+        }
+    }
+   }
+
+   @media screen and (orientation:portrait) {
+
+    #contact{
+        margin-top: 19vh;
+    }
+
+    #contactgroup{
+        flex-direction: column;
+    }
+
+    .contactoptions{
+        padding-top: 1rem;
+        width: 98vw;
+        height: 400px;
+    }
+
+    .locateus{
+        line-height: 2rem;
+        height: 400px;
+    
+    }
+    
+    .welc{
+        font-size: 1rem;
+    }
+    
+    .addr{
+        font-size: 1.25rem;
+    }
+   }
+
+   @media screen and (orientation:landscape) and (max-width:1000px) {
+    #contact{
+        margin-top: 29vh;
+    }
+    
+    .contactoptions{
+        width: 98vw;
+    }
+
+    .locateus{
+        line-height: 2rem;
+    
+    }
+    
+    .welc{
+        font-size: 1rem;
+    }
+    
+    .addr{
+        font-size: 1.25rem;
+    }
+   }
+
+   @media screen and (orientation:portrait) and (min-width:700px){
+    #contactgroup, .contactoptions a{
+        font-size: 1.7rem;
+    }
+    .contactoptions,.locateus{
+        line-height: 50px;
+    }
+    .contactoptions .envelope,.contactoptions .phone, .contactoptions .whatsapp{
+        font-size: 5rem;
+        
+    }
+    .welc {
+        font-size: 1.5rem;
+    }
+
+    .addr {
+        font-size: 2rem;
+    }
+}
+
+@media screen and () {
+    
+}
+
+@media screen and (min-height:500px) and (orientation:landscape) {
+  .contactoptions{
+    padding-top: 0px;
+
+}  
+}
+
+@media screen and (max-height:400px) {
+    #contact{
+        margin-top: 31vh;
+    }
+  }
+
+
+
+  @media screen and (max-height:550px) and (orientation:landscape) {
+    .contactoptions{
+      padding-top: 40px;   
+    }
+   
+  }
+
+  @media screen and (max-height:450px) and (orientation:landscape) {
+    .contactoptions{
+      padding-top: 50px;   
+    }
+   
+  }
+
+  @media screen and (max-height:400px) and (orientation:landscape) {
+    .contactoptions{
+      padding-top: 100px;   
+    }
+   
+  }
+
+  @media screen and (max-height:350px) and (orientation:landscape) {
+    .contactoptions{
+      padding-top: 150px;   
+    }
+   
+  }
+
+  @media screen and (max-height:300px) {
+    #contact{
+        margin-top: 41vh;
+    }
+  }
+
