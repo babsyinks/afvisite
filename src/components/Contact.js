@@ -1,6 +1,7 @@
 import React from 'react'
 import ComponentWrapper from './ComponentWrapper'
 import Map from './Map'
+import Map1 from './Map1'
 import './Contact.css'
 
 const Contact = () => {
@@ -31,11 +32,13 @@ const Contact = () => {
         </div>
         
       </div>   
-      <div className='locationWrapper'>
-        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our office located at</div> <div> <code className='addr'>2009 Awka Street, Area 10, Garki, Abuja, Nigeria.</code></div></div>
+     <div className='locationWrapper'>
+        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our main office located at</div> <div> <code className='addr'>APDC Building,Plot 1329, Cadastral Zone A0, Behind AGIS, Area 11, Garki, Abuja.</code></div></div>
       </div>
-      
-      
+     <Map1/>
+     <div className='locationWrapper'>
+        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our branch office located at</div> <div> <code className='addr'>Cyprian Ekwensi Center For Arts And Culture, 2009 Awka Street, Area 10, Garki, Abuja.</code></div></div>
+      </div>
      <Map/>
     </div>
   )
