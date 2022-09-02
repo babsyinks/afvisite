@@ -8,7 +8,7 @@
     margin-top: 2rem;
 }
 
-.picsvidswrapper img{
+.picsvidswrapper img, .picsvidswrapper video{
     display: inline-block;
     width: 95%;
     height: 70vh;

@@ -1,0 +1,36 @@
+#useAdmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 19vh;
+    height: 70vh;
+}
+
+#useAdmin *{
+    margin-bottom: 1rem;
+    width: 30vw;
+    padding: 0.5rem;
+}
+
+#useAdmin h2{
+    width: unset;
+    color: rgb(66, 2, 126);
+}
+
+#useAdmin button{
+    background-color:rgb(87, 87, 236);
+    color: white;
+}
+
+#useAdmin button:hover{
+    background-color:rgb(16, 16, 196);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (orientation:portrait) {
+    #useAdmin *{
+        width: 90vw;
+    }
+}

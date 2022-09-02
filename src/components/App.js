@@ -1,5 +1,6 @@
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
+import UseAdmin from './UseAdmin';
 import Home from './Home';
 import VisionAndMission from './VisionAndMission';
 import About from './About';
@@ -22,6 +23,7 @@ function App() {
                 <Route exact path = '/components' element = {<Components />}/>
                 <Route exact path = '/contents' element = {<Contents />}/>
                 <Route exact path = '/contact' element = {<Contact />}/>
+                <Route exact path='/admin' element = {<UseAdmin/>} />
                 <Route path='*' element = {<NotFound/>} />
             </Routes> 
             </ScrollToTop>

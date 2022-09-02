@@ -1,5 +1,6 @@
 import React/* , {useState} */ from 'react'
 import ComponentWrapper from './ComponentWrapper'
+import PicturesAndVideosContainer from './PicturesAndVideosContainer'
 import './Contents.css'
 const Contents = () => {
   /* const[contentsArr,setContentsArr] = useState([]) */
