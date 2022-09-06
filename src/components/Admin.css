@@ -4,7 +4,7 @@
     align-items: flex-start;
     flex-direction: column;
     background-size: cover;
-    background-image: linear-gradient(to right, rgb(253, 208, 208),rgb(255, 240, 209),rgb(243, 243, 191),rgb(200, 245, 200),rgb(190, 190, 248),rgb(224, 188, 248),rgb(247, 197, 247));
+    background-image: linear-gradient(to right, rgb(253, 227, 208),rgb(255, 253, 209),rgb(196, 243, 191),rgb(200, 245, 200),rgb(190, 190, 248),rgb(224, 188, 248),rgb(247, 197, 247));
     height:100vh;
     overflow-x: hidden;
 }
@@ -23,7 +23,7 @@
 }
 .admin div label{
     font-weight: bold;
-    width:150px;
+    padding: 0rem 1rem;
     font-size: 18px;
     display: inline-block;
 }
@@ -37,6 +37,10 @@
 
 .admin input{
     background: none;
+}
+
+select, option {
+    padding: 0.3rem;
 }
 
 #submit{
@@ -101,14 +105,23 @@
     pointer-events: none;
 }
 
+.progress_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+
+}
+.progress{
+    width: 30vw;
+    height: 75vh;
+
+}
+
 @media screen and (max-width:500px){
     .admin div{
         margin-left: 3%;
         align-self: flex-start;
-    }
-
-    .admin div label {
-        width: 120px;
     }
 
     .admin input[type="text"] {
@@ -158,7 +171,7 @@
 
     .admin div label{
         font-size:14px;
-        width:80px
+        
     }
 
     .admin{

@@ -24,7 +24,8 @@ const UseAdmin = () => {
     const auth = getAuth()
     const acceptedEmail = 'abujafilmvillage@gmail.com'
     const [email,setEmail] = useState('')
-    const [authenticated, setAuthenticated] = useState(false)
+    const [returnedEmail, setReturnedEmail] = useState('')
+    const [uid,setUid] = useState('')
     const handleInputChange = e=>{
         setEmail(e.target.value)
     }
@@ -36,24 +37,23 @@ const UseAdmin = () => {
             const token = credential.accessToken;
             // The signed-in user info.
             const user = result.user;
-            if(user.email === acceptedEmail){
-                setAuthenticated(true)
-            }
-            else{
-                const user = auth.currentUser;
+            setReturnedEmail(user.email)
+            setUid(user.uid)
+            if(user.email !== acceptedEmail){
+                 const user = auth.currentUser;
 
                 deleteUser(user).then(() => {
                 
                 }).catch((error) => {
                     console.log(error.message)
-                });     
+                });                
             }
             
         }).catch((error) => {
            console.log(error.message) 
         });
     }
-    if(!authenticated){
+    if(acceptedEmail !== returnedEmail){
         return (
             <div id='useAdmin'>
                 <h2>Enter Your Email Below And Submit</h2>
@@ -64,7 +64,7 @@ const UseAdmin = () => {
         )        
     }
     else{
-        return <Admin/>
+        return <Admin uid = {uid}/>
     }
 
 }
