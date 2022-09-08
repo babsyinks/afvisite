@@ -2,7 +2,6 @@ import React,{useState} from 'react'
 import Admin from './Admin'
 import './UseAdmin.css'
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import {getAuth, signInWithPopup, GoogleAuthProvider, deleteUser  } from "firebase/auth";
 
 const firebaseConfig = {
@@ -16,8 +15,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+initializeApp(firebaseConfig);
+
 
 const UseAdmin = () => { 
     const provider = new GoogleAuthProvider();
@@ -32,9 +31,6 @@ const UseAdmin = () => {
     const handleSubmit = e=>{
         signInWithPopup(auth, provider)
         .then((result) => {
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
             // The signed-in user info.
             const user = result.user;
             setReturnedEmail(user.email)

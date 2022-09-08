@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import ComponentWrapper from './ComponentWrapper'
 import Map from './Map'
 import Map1 from './Map1'
@@ -11,6 +11,14 @@ const Contact = () => {
   looking for a great project to invest in, why don't you invest with us? We will make it worth your 
   while!
   `
+
+  const [renderSecondMap, setRenderSecondMap] = useState(false)
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setRenderSecondMap(true)
+    }, 3000);
+  },[])
   return (
     <div id='contact'>
       <ComponentWrapper src={`/images/contact-us.jpg`} alt='contact us' desc={contactus}/>
@@ -36,10 +44,13 @@ const Contact = () => {
         <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our main office located at</div> <div> <code className='addr'>APDC Building,Plot 1329, Cadastral Zone A0, Behind AGIS, Area 11, Garki, Abuja.</code></div></div>
       </div>
      <Map1/>
+     {renderSecondMap && (<>
      <div className='locationWrapper'>
         <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our branch office located at</div> <div> <code className='addr'>Cyprian Ekwensi Center For Arts And Culture, 2009 Awka Street, Area 10, Garki, Abuja.</code></div></div>
       </div>
-     <Map/>
+     <Map/>     
+     </>)}
+
     </div>
   )
 }

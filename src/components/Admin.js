@@ -54,7 +54,7 @@ useEffect(()=>{
       setAlert('failed','Upload Failed,Check Your Network Or Try Again Later!!!')
     });
 
-  },[listRef])
+  },[listRef,chosenFolder])
 
   useEffect(()=>{
     if(((folderContents.length > 0 && folderCat === existingFolder) || (newFolderName.length > 0 && (folderCat === newFolder || folderEmpty))) && pictures.length > 0){

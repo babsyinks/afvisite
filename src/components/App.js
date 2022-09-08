@@ -7,7 +7,9 @@ import About from './About';
 import Components from './Components';
 import Contact from './Contact';
 import Contents from './Contents';
-import Footer from './Footer'
+import Footer from './Footer';
+import Videos from './Videos';
+import ImageFolders from './ImageFolders';
 import NotFound from './NotFound';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 function App() {
@@ -24,6 +26,8 @@ function App() {
                 <Route exact path = '/contents' element = {<Contents />}/>
                 <Route exact path = '/contact' element = {<Contact />}/>
                 <Route exact path='/admin' element = {<UseAdmin/>} />
+                <Route exact path='/image_folders' element = {<ImageFolders/>} />
+                <Route exact path='/videos' element = {<Videos/>} />
                 <Route path='*' element = {<NotFound/>} />
             </Routes> 
             </ScrollToTop>
