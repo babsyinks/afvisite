@@ -153,6 +153,9 @@ useEffect(()=>{
             setAlert('success','Uploading Process Completed')
             setTimeout(()=>{
               setUploading(false)
+              if(newFolderName.length>0){
+                setNewFolderName('')
+              }
             },5500)
             
           }
@@ -167,6 +170,7 @@ useEffect(()=>{
   } 
 
   const handleFolderCategory = e=>{
+    setNewFolderName('')
     setFolderCat(e.target.value)
   }
 
@@ -210,7 +214,7 @@ useEffect(()=>{
         
           {((folderCat === newFolder) || folderEmpty) && (
           <div>
-            <label htmlFor='newFolder'>Give The New Folder A Name:</label><input type = "text" name = "newFolder" maxLength={20} value = {newFolderName} onChange = {handleSetNewFolderName} ></input>
+            <label htmlFor='newFolder'>Give The New Folder A Name:</label><input type = "text" name = "newFolder" maxLength={60} value = {newFolderName} onChange = {handleSetNewFolderName} ></input>
           </div>
           )}
           {folderCat === existingFolder && (

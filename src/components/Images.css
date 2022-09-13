@@ -1,0 +1,97 @@
+.imgContainer{
+    margin-top: 19vh;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+.imgHolder{
+    width: 30vw;
+    height: 50vh;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 0 3px rgb(171, 159, 159);
+    padding: 0.8rem;
+}
+
+.imgHolder img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+.imgHolder img:hover{
+    transform: scale(1.03);
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background-color: rgba(24, 23, 23, 0.8);
+    z-index: 10000;
+}
+.forediv{
+    position: fixed;
+    height: 92%;
+    width: 92%;
+    z-index: 20000;
+    
+    padding: 0.2rem;
+   background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+}
+
+.forediv img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cancel{
+/*     position: fixed;
+    top: 0;
+    right: 0; */
+    z-index: 21000;
+    cursor:pointer;
+}
+
+.cancelWrap{
+    display: flex;
+    justify-content: flex-end;
+    width: 96%;
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (orientation:portrait) {
+    .imgContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgHolder{
+        width: 92vw;
+    }
+    .forediv{
+        height: 55%;
+        width: 98%;
+    }
+    .forediv img{
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -33,7 +33,8 @@ const ImageFolders = () => {
       console.log(error)
       
     });
-  },[listRef])
+    //eslint-disable-next-line
+  },[])
 
   const loadImages = (folder)=>{
     const path = `${commonPath}/${folder}`
@@ -74,11 +75,10 @@ const ImageFolders = () => {
     return (
       <Images imgs={imagesArray}/>
     )
-      
   }
   else if(folders.length>0){
     return (
-      <div id='imageWrapper'>
+      <div id = 'imageWrapper'>
         {folders.map((folder)=>(
           <div className='imgWrapperOuter' key={folder}>
             <div className='imgWrapperInner' onClick={loadImages.bind(null,folder)}>
@@ -89,7 +89,6 @@ const ImageFolders = () => {
               <div className='folder_back'>
                 <h2>Click To View Images </h2>
               </div>
-
             </div>
         </div>  
         ))}
