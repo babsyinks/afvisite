@@ -63,6 +63,7 @@
     justify-content: center;
     align-items: center;
     
+    
   }
   .logoWrapper img{
     margin-bottom: 0px;
@@ -71,9 +72,10 @@
   }
   .logoWrapper div{
     font-family: 'Source Code Pro', monospace;
-    font-weight:bold;
+    font-weight:bolder;
     letter-spacing: 5px;
     color: brown;
+    
   }
 
   /* devices less than 1000px in length */

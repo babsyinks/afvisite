@@ -27,14 +27,20 @@ const[isPortrait,setIsportrait] = useState(false)
   )
 
 
-  const missionvision = `We are highly focused proffessionals. We have a grand vision we hope you will share with us. We will like to take you 
-  on a journey with us as we build the film village of our dreams. We are on a mission to bring this dream to reality. Hang in there with us;
-  we promise to make it a fun-filled experience for everyone on this journey with us!
+  const missionvision = `As highly focused professionals, we have a grand vision we hope you will share 
+  with us. We will like to take you 
+  on a journey with us as we build the film village of our dreams. We are on a mission to bring this 
+  dream to reality. Hang in there with us;
+  we promise to make it a fun-filled and profitable experience!
   `
 
-  const component_desc = `Our components are the core building blocks that the film village depends on. Our components are numerous, we have over
-  50 components. All components are important and form key cogs that drive the film village project forward. We encourage you to take a deep dive 
-  into our component page, and check out all the components we have to offer, perhaps some may be of interest to you.
+  const component_desc = `Our components are the core building blocks that the film village depends on. 
+  We have over
+  50 important components, which form the key cogs that drive the film village project 
+  
+  forward. We encourage you to take a deep dive 
+  into our components page, and check out what we have to offer, perhaps some may be of 
+  interest to you.
   `
 
   const contact_us = `Still have questions? Please do not hesitate to reach out to us. We are available always on multiple communication channels.
@@ -45,8 +51,8 @@ const[isPortrait,setIsportrait] = useState(false)
     <div id='bodywrapper'>
         <div id='bodyImage' className='x-axis'>
           <div id='introduction'>
-            <div className='introduction_contents no_cap'>What Are We Doing?</div>
-            <div className='introduction_contents cap'>WE ARE BUILDING A ONE-STOP SHOP FOR YOUR ENTERTAINMENT AND FILM MAKING NEEDS.</div>
+            <div className='introduction_contents no_cap'>Who We Are?</div>
+            <div className='introduction_contents cap'>A ONE STOP SHOP FOR FILM MAKING AND ENTERTAINMENT EXCELLENCE.</div>
           </div>
         </div> 
         <div className='mkt_group'>
@@ -70,8 +76,7 @@ const[isPortrait,setIsportrait] = useState(false)
             <div className='mkt_divs third'>
               <div><i className="fa-solid fa-file-signature fa-4x govt"></i></div>
               <h2>Government Support</h2>
-              <div>Abuja Film Village is government owned, hence, investors can be assured of support from the government for all their investments.
-                Investing with us can help establish a relationship between investors and the government, which can be mutually beneficial.
+              <div>Abuja Film Village International Limited is wholly owned by government.  It is an initiative of the Federal Capital Territory Administration and a subsidiary of Abuja Investments Company Limited.
               </div>
             </div>
           </div>

@@ -31,6 +31,7 @@
   .no_cap{
     font-family: 'Berkshire Swash', cursive;
     font-size: 1rem;
+    word-spacing: 0.3rem;
   }
 
   .cap{
