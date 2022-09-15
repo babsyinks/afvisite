@@ -41,12 +41,12 @@ const Contact = () => {
         
       </div>   
      <div className='locationWrapper'>
-        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our main office located at</div> <div> <code className='addr'>Abuja Film Village, Plot 1329 Peace Drive, Cultural Spine, (Behind AGIS), Area 11, Garki, Abuja.</code></div></div>
+        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our main office located at</div> <div> <span className='addr'>Abuja Film Village, Plot 1329 Peace Drive, Cultural Spine, (Behind AGIS), Area 11, Garki, Abuja.</span></div></div>
       </div>
      <Map1/>
      {renderSecondMap && (<>
      <div className='locationWrapper'>
-        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our branch office located at</div> <div> <code className='addr'>Cyprian Ekwensi Center For Arts And Culture, 2009 Awka Street, Area 10, Garki, Abuja.</code></div></div>
+        <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our branch office located at</div> <div> <span className='addr'>Cyprian Ekwensi Center For Arts And Culture, 2009 Awka Street, Area 10, Garki, Abuja.</span></div></div>
       </div>
      <Map/>     
      </>)}

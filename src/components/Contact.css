@@ -74,7 +74,7 @@
 }
 
 .location{
-    color: rgb(90, 6, 169);
+    color: rgb(51, 0, 99);
 }
 
 .welc{
@@ -87,7 +87,8 @@
 .addr{
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(63, 2, 120);
+    color: rgb(51, 0, 99);
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width:1000px) {
