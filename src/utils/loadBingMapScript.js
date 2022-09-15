@@ -39,7 +39,7 @@ function loadBingMapScript(scriptID,mapObj) {
     if(mapObj.id === 'map'){
         window.GetMap = () => InitMap(mapObj);
         
-        script.src = "http://www.bing.com/api/maps/mapcontrol?callback=GetMap";
+        script.src = "https://www.bing.com/api/maps/mapcontrol?callback=GetMap";
         
     }
     else{
