@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import ReactLoading from 'react-loading';
+import { useNavigate } from 'react-router-dom';
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import Nocontents from './Nocontents'
-import Images from './Images';
+//import Images from './Images';
 import './ImageFolders.css' 
 
 const ImageFolders = () => {
@@ -13,6 +14,7 @@ const ImageFolders = () => {
   const commonPath = 'users/y8YRMieSsGZsQw7AQRHxTJGuOoY2'
   const storage = getStorage()
   const listRef = ref(storage, commonPath);
+  const navigate = useNavigate()
 
   useEffect(()=>{
     listAll(listRef)
@@ -35,6 +37,12 @@ const ImageFolders = () => {
     });
     //eslint-disable-next-line
   },[])
+
+  useEffect(()=>{
+    if(imagesArray.length>0){
+      navigate('/images', {state:imagesArray})
+    }
+  },[imagesArray,navigate])
 
   const loadImages = (folder)=>{
     const path = `${commonPath}/${folder}`
@@ -70,11 +78,6 @@ const ImageFolders = () => {
   }
   else if(!foldersAvailable){
     return <Nocontents content={'image'}/>
-  }
-  else if(imagesArray.length>0){
-    return (
-      <Images imgs={imagesArray}/>
-    )
   }
   else if(folders.length>0){
     return (

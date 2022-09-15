@@ -1,13 +1,16 @@
 import React,{useState} from 'react'
+import {useLocation} from 'react-router-dom';
 import './Images.css'
-const Images = ({imgs:imagesArray}) => {
+const Images = () => {
+  const location = useLocation()
+  const imagesArray = location.state
   const [imgUrl,setImgUrl] = useState('')
   const[hidden,setHidden] = useState(true)
   const displayFullImage = (url)=>{
     setImgUrl(url)
     setHidden(false)
     
-  }
+  } 
   return (
     <>
       <div className='imgContainer'>
