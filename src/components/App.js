@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import UseAdmin from './UseAdmin';
