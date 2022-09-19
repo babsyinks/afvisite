@@ -85,7 +85,7 @@ const Header = ()=>{
                 )}><i className="fa-solid fa-address-book menu-items"></i><span>Contact</span></NavLink></li>            
         </Menu>    
         <div className='logoDiv'>
-          <span className = 'logoWrapper'><img alt='logo' src='/images/afvilogo.jpg'></img><div>ABUJA FILM</div><div style = {{textAlign:'center'}}>VILLAGE</div></span> 
+          <span className = 'logoWrapper'><img alt='logo' src='/images/afv.png'></img><div>ABUJA FILM</div><div style = {{textAlign:'center'}}>VILLAGE</div></span> 
         </div>
       </div>
 
@@ -105,7 +105,7 @@ const Header = ()=>{
               isActive ? activeClassName : undefined
               )}>Vision And Mission</NavLink></li>
           </ul>  
-            <span className = 'logoWrapper'><img alt='logo' src='/images/afvilogo.jpg'></img><div>ABUJA FILM</div><div style = {{textAlign:'center'}}>VILLAGE</div></span>
+            <span className = 'logoWrapper'><img alt='logo' src='/images/afv.png'></img><div>ABUJA FILM</div><div style = {{textAlign:'center'}}>VILLAGE</div></span>
           <ul className = 'navList'>
             <li><NavLink to={`/components`} className={({ isActive }) =>(
               isActive ? activeClassName : undefined
