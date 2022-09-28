@@ -44,7 +44,7 @@ const[isPortrait,setIsportrait] = useState(false)
   `
 
   const contact_us = `Still have questions? Please do not hesitate to reach out to us. We are available always on multiple communication channels.
-  You can also visit our office at our designated address that can be found on our contact page. We look foraward to hearing from you very soon.
+  You can also visit our office at our designated address that can be found on our contact page. We look forward to hearing from you very soon.
   
   `
   return (
