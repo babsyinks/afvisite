@@ -3,7 +3,6 @@ import ReactLoading from 'react-loading';
 import { useNavigate } from 'react-router-dom';
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import Nocontents from './Nocontents'
-//import Images from './Images';
 import './ImageFolders.css' 
 
 const ImageFolders = () => {

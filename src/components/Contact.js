@@ -31,7 +31,7 @@ const Contact = () => {
         <div className='contactoptions'>
         <div><i className ="fa-solid fa-envelope fa-5x envelope"></i></div>
           <div className='contactdesc'>You can send us an email on our designated email address below. We will surely reply your mail shortly.</div>
-          <div className='contact_medium'><a className='env' href='mailto:abujafilmvillage@gmail.com'><span>Click to mail us on: <span className='wordBreak'>abujafilmvillage@gmail.com</span></span></a></div>
+          <div className='contact_medium'><a className='env' href='mailto:abujafilmvillage@gmail.com'><span>Click to mail us on: <div className='wordBreak'>abujafilmvillage@gmail.com</div></span></a></div>
         </div>
         <div className='contactoptions'>
         <div><i className="fa-brands fa-whatsapp fa-5x whatsapp"></i></div>

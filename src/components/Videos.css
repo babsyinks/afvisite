@@ -1,0 +1,52 @@
+.vidContainer{
+    margin-top: 19vh;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+.vidHolder{
+    width: 30vw;
+    height: 50vh;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 0 3px rgb(171, 159, 159);
+    padding: 0.8rem;
+}
+
+.vidHolder iframe{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (orientation:portrait) {
+    .vidContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .vidHolder{
+        width: 92vw;
+    }
+    
+}
+
+@media screen and (orientation:landscape) and (max-height:650px) {
+    .vidContainer{
+        margin-top: 28vh;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-height:400px) {
+    .vidContainer{
+        margin-top: 35vh;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-height:300px) {
+    .vidContainer{
+        margin-top: 45vh;
+    }
+}

@@ -14,7 +14,7 @@ const PicturesAndVideosContainer = () => {
             <source src='/videos/camvideo.mp4' type='video/mp4'></source>
             Your browser does not support the video tag.
           </video>
-          <Link to = '/videos'><Button id={'button_pos'} text='Watch Videos' additionalStyle={{marginTop:'1.5rem'}} additionalClass='content_btn'/></Link>
+          <Link to = '/video_folders'><Button id={'button_pos'} text='Watch Videos' additionalStyle={{marginTop:'1.5rem'}} additionalClass='content_btn'/></Link>
         </div>
     </div>
   )
