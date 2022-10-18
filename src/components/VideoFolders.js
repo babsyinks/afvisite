@@ -43,7 +43,6 @@ if(videofolders.length>0){
 else{
   return <Nocontents content={'video'}/>
 }
-
 }
 
 export default VideoFolders
