@@ -15,7 +15,6 @@ useEffect(()=>{
 },[linksArr,navigate])
 
 const openVideoFolder = (links)=>{
-  console.log(links)
   setLinksArr(links)
 }
 
