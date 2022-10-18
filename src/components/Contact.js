@@ -11,9 +11,7 @@ const Contact = () => {
   looking for a great project to invest in, why don't you invest with us? We will make it worth your 
   while!
   `
-
   const [renderSecondMap, setRenderSecondMap] = useState(false)
-
   useEffect(()=>{
     setTimeout(() => {
       setRenderSecondMap(true)
@@ -38,7 +36,6 @@ const Contact = () => {
           <div className='contactdesc'>You can chat with us on the WhatsApp number below.You can expect instant response from us. </div>
           <div className='contact_medium'><a className='whts' href='https://api.whatsapp.com/send?phone=2349166773667' target={'blank'}><span>Click to chat with us on WhatsApp</span></a></div>
         </div>
-        
       </div>   
      <div className='locationWrapper'>
         <div className='locateus'><i className="fa-solid fa-location-arrow fa-5x location"></i> <div className='welc'>You are welcome to visit our main office located at</div> <div> <span className='addr'>Abuja Film Village, Plot 1329 Peace Drive, Cultural Spine, (Behind AGIS), Area 11, Garki, Abuja.</span></div></div>
@@ -50,7 +47,6 @@ const Contact = () => {
       </div>
      <Map/>     
      </>)}
-
     </div>
   )
 }
